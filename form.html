@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FORM</title>
+    <style>
+    .header{
+        color: blue;
+    }
+    form{
+        background-color: rgb(0, 255, 64);
+    }
+    fieldset{
+        margin-right: 60px;
+        margin-left: 50px;
+    }
+    legend{
+         text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h1 class="header">APPLICATION FORM</h1>
+    <form action="submittedform.html"> 
+        <br><br>
+        <fieldset>
+        <legend>personal Details:</legend>
+        <label for="text">username:</label> <br>
+        <input type="username"placeholder="enter your full name"required>
+
+        <br><br>
+
+        <label for="email"> email id: </label> <br>
+        <input type="email"placeholder="enter your email id"required>
+
+        <br><br>
+        
+        <label for="password">password:</label> <br>
+        <input type="password" placeholder="enter your password">
+    </fieldset>
+    <br><br>
+
+    <fieldset>
+
+    <legend> select your gender:</legend> <div>
+    <input type="radio" name="gender">male <br>
+    <input type="radio" name="gender">female <br>
+    <input type="radio" name="gender">others <br>
+    </div>
+    <br><br>
+
+    </fieldset>
+     <fieldset>
+    <legend>select your skills:</legend> 
+    <input type="checkbox" name="checkbox">c <br>
+    <input type="checkbox" name="checkbox">c++ <br>
+    <input type="checkbox" name="checkbox">java <br>
+    <input type="checkbox" name="checkbox">html <br>
+    <input type="checkbox" name="checkbox">css <br>
+    <input type="checkbox" name="checkbox">others <br>
+    </fieldset>
+    <br> <br>
+
+    <fieldset>
+        <legend>Experience:</legend>
+    <select name="Experience"id="Experience">
+        <option value="select"required value="1">select</option>
+        <option value="0-1" value="2">0 to 1 year</option>
+        <option value="1-2" value="3">1 to 2 year</option>
+        <option value="2-3" value="4">2 to 3 year</option>
+        <option value="3-5" value="5">3 to 5 year</option>
+        <option value="morethan 5"> 5 years</option>
+    </select>
+    <br><br>
+    </fieldset>
+     <br><br>
+
+    <fieldset>
+    <legend>Address:</legend>
+    <textarea name="address" cols="15",rows="5" ></textarea>
+    </fieldset>
+    <br>
+
+    <button>submit</button>
+</form>
+</body>
+</html>
